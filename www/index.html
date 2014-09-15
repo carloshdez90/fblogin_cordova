@@ -17,63 +17,57 @@
     <script src="cordova.js"></script>  
     <script src="js/app.js"></script> 
     <script>        
-        //ons.bootstrap();
-                
-        ons.ready(function() {
-        
-        });
-        
-        function changed() {
-            alert('llego');
-            if(fb.isChecked()){
-                tw.setChecked(false)
-            }else{
-                tw.setChecked(true)
-            }
-
-            if(tw.isChecked()){
-                fb.setChecked(false)
-            }else{
-                fb.setChecked(true)
-            }
-          //alert(my.isChecked() ? 'ON' : 'OFF');
-        } 
+        //ons.bootstrap();    
 
     </script>
   </head>
-  <body>
-    <ons-page>
-      <ons-toolbar>
-        <div class="center">Inicie Sesión</div>
-        <!--<div class="right"><ons-toolbar-button>Close</ons-toolbar-button></div>-->
-      </ons-toolbar>
-      
-      <div class="profile-card">
-        <img src="images/logo.png" class="profile-image">
-        <div class="profile-name">InfoUtil 2.0</div>
-      </div>
-      
-      <div class="login-form">
+  <body ng-controller="loginController">
+   <ons-navigator title="Navigator" var="Navigator">
+        <ons-page>
+          <ons-toolbar>
+            <div class="center">Inicie Sesión</div>
+            <!--<div class="right"><ons-toolbar-button>Close</ons-toolbar-button></div>-->
+          </ons-toolbar>
 
-        <!--<input type="email" class="text-input--underbar" placeholder="Email" value="">
-        <input type="password" class="text-input--underbar" placeholder="Password" value="">-->
-        <ons-list modifier="inset" class="settings-list">
-            <ons-list-item>
-                 Facebook
-                 <ons-switch var="tw" modifier="list-item" onchange="changed()" checked></ons-switch>
-            </ons-list-item>
-            
-            <ons-list-item>
-                 Twitter
-                 <ons-switch var="fb" modifier="list-item" onchange="changed()"></ons-switch>
-            </ons-list-item>
-        </ons-list>
+          <div class="profile-card">
+            <img src="images/logo.png" class="profile-image">
+            <div class="profile-name">InfoUtil 2.0</div>
+          </div>
+
+          <div class="login-form">
+            <ons-row>
+                <ons-col width="50%">
+                    <button class="button button--large toolbar-button--outline" ng-click="twitterLogin()">
+                      <i class="fa fa-twitter" style="font-size:20px"></i>     Twitter
+                    </button>
+                </ons-col>
+                <ons-col width="50%">
+                    <button class="button button--large toolbar-button--outline" ng-click="facebookLogin()">
+                      <i class="fa fa-facebook" style="font-size:20px"></i>     Facebook
+                    </button>
+                </ons-col>
+            </ons-row>
+            <br><br>
+          </div>
+        </ons-page>
         
-        <br><br>
-        <ons-button modifier="large" class="login-button">Log In</ons-button>
-      </div>
+        <ons-template id="page1.html">
+          <ons-page>
+            <ons-toolbar>
+              <div class="left"><ons-back-button>Back</ons-back-button></div>
+              <div class="center">Page 2</div>
+            </ons-toolbar>
 
-    </ons-page>
+            <div style="text-align: center">
+              <br />
+              <ons-button modifier="light" onclick="Navigator.popPage()">
+                Pop Page
+              </ons-button>
+            </div>
+          </ons-page>
+        </ons-template>
+    </ons-navigator>
 
   </body>
 </html>
+

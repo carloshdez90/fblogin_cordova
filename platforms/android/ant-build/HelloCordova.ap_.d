@@ -32,11 +32,15 @@
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/cordova.js \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/index.html \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/styles \
+/home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/plugins \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/lib \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/cordova_plugins.js \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/images \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/js \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/styles/app.css \
+/home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/plugins/com.chariotsolutions.toast.plugin \
+/home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/plugins/com.chariotsolutions.toast.plugin/www \
+/home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/plugins/com.chariotsolutions.toast.plugin/www/phonegap-toast.js \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/lib/onsen \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/lib/onsen/css \
 /home/xscharlie/Projects/Phonegap/fb_login_based_on_master_detail_template/platforms/android/assets/www/lib/onsen/stylus \
