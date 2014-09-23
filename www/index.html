@@ -15,20 +15,23 @@
     <script src="lib/onsen/js/onsenui.js"></script>
     
     <script src="cordova.js"></script>  
-    <script src="js/app.js"></script> 
+    <script src="js/app.js"></script>
+    <script src="js/openfb.js"></script>
+ 
     <script>        
         //ons.bootstrap();    
 
     </script>
   </head>
   <body ng-controller="loginController">
+  <div></div>
    <ons-navigator title="Navigator" var="Navigator">
         <ons-page>
           <ons-toolbar>
             <div class="center">Inicie Sesión</div>
             <!--<div class="right"><ons-toolbar-button>Close</ons-toolbar-button></div>-->
-          </ons-toolbar>
-
+          </ons-toolbar>  
+          
           <div class="profile-card">
             <img src="images/logo.png" class="profile-image">
             <div class="profile-name">InfoUtil 2.0</div>
@@ -37,13 +40,14 @@
           <div class="login-form">
             <ons-row>
                 <ons-col width="50%">
-                    <button class="button button--large toolbar-button--outline" ng-click="twitterLogin()">
-                      <i class="fa fa-twitter" style="font-size:20px"></i>     Twitter
-                    </button>
-                </ons-col>
-                <ons-col width="50%">
                     <button class="button button--large toolbar-button--outline" ng-click="facebookLogin()">
                       <i class="fa fa-facebook" style="font-size:20px"></i>     Facebook
+                    </button>
+                </ons-col>
+                
+                <ons-col width="50%">
+                    <button class="button button--large toolbar-button--outline" ng-click="twitterLogin()">
+                      <i class="fa fa-twitter" style="font-size:20px"></i>     Twitter
                     </button>
                 </ons-col>
             </ons-row>
@@ -55,14 +59,24 @@
           <ons-page>
             <ons-toolbar>
               <div class="left"><ons-back-button>Back</ons-back-button></div>
-              <div class="center">Page 2</div>
+              <div class="center">InfoUtil 2.0</div>
             </ons-toolbar>
 
             <div style="text-align: center">
-              <br />
-              <ons-button modifier="light" onclick="Navigator.popPage()">
-                Pop Page
-              </ons-button>
+                <br />
+                <ons-row align="center" width="80%">
+                     <ons-col>
+                         <textarea class="textarea" modifier="outline" rows="3" placeholder="Introduce un comentario ..."></textarea>
+                     </ons-col>
+                </ons-row>
+                <br />
+                <ons-row align="center">
+                    <ons-col>
+                        <ons-button modifier="outline" ng-click="comentar()">
+                            Comentar
+                        </ons-button>
+                    </ons-col>
+                </ons-row>
             </div>
           </ons-page>
         </ons-template>
